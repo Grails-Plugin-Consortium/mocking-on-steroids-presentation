@@ -75,7 +75,9 @@ build/Release
 
 # Dependency directory
 # https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
-node_modules
+node_modules/.bin
+node_modules/grunt*
+node_modules/load*
 
 .sass-cache
 bower_components
