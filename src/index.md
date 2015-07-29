@@ -21,9 +21,50 @@ by <a href="https://twitter.com/ctoestreich">@ctoestreich</a>
 ## <b>Company:</b> Bluestem Group
 ## <b>Url:</b> http://www.bluestembrands.com/
 
+!SLIDE quiet small-code 
+
+# Back In The Day
+## Everything was manual
+
+<img src="images/devops-define-roles.jpg" alt="dev ops">
+
+!SLIDE quiet small-code 
+
+# In The Now
+## Everything is automated
+
+<img src="images/docker.jpg" alt="dev ops">
+
+
+!SLIDE quiet small-code 
+
+# In The Now
+
+<img src="images/deploy.png" alt="automated deploy" height="80%">
+
+
+!SLIDE shout 
+# We run <span class="danger">a lot</span> tests
+
+
+!SLIDE quiet small-code 
+# Running <span class="danger">a lot</span> of the same functional tests on transactional systems cause corrupted test data
+
+
+```
+    given:
+    assert customer.payments.size() == 0
+    
+    when:
+    customer.makePayment()
+    
+    then:
+    customer.payments.size() == 1
+   
+```
 
 !SLIDE shout
-# Mocking Is Easy, Right?!
+# Mocking Is <span class="danger">Easy</span>, Right?!
 
 
 !SLIDE quiet small-code 
@@ -49,7 +90,7 @@ by <a href="https://twitter.com/ctoestreich">@ctoestreich</a>
 
 
 !SLIDE quietest shout 
-# Well... unless you want to mock your integration and functional tests
+# Well... unless you want to mock your external systems during integration and functional tests
 
 
 !SLIDE shout
@@ -76,21 +117,29 @@ by <a href="https://twitter.com/ctoestreich">@ctoestreich</a>
 
 !SLIDE quieter shout
 # Tools we looked at
-## Betamax, SoapUI, Third-party Solutions<BR /><br />These didn't meed our needs, were costly or all of the above.
+## Parasoft, Betamax, SoapUI, Third-party Solutions<BR /><br />These didn't meet our needs, not pci compliant,<br />were costly or all of the above.
 
 
 !SLIDE quieter shout
-# Service Virtualization<br /><span class="smaller">A <span class="danger">Smarter</span> Proxy</span>
+# Service Virtualization<br /><span class="smaller">A <span class="danger">Smart</span> Proxy</span>
 
+!SLIDE quiet small-code 
+# Service Virtualization
+<img src="images/stack.png" alt="stack" height="60%">
+
+
+!SLIDE quiet small-code 
+# Service Virtualization
+<img src="images/tracer.jpg" alt="tracer" height="70%">
 
 !SLIDE quietest small-code 
 # How about we also do these things
 
 <ul>
-    <li>Mock All Responses</li>
-    <li>Enable Default Mock Responses</li>
-    <li>Map Request Fields To Mocked Response Fields</li>
-    <li>Enable Mockable State Transition</li>
+    <li>Mock Responses <i>(matched input)</i></li>
+    <li>Enable Default Mock Responses <i>(unmatched input)</i></li>
+    <li>Map Request Fields To Mocked Response Fields <i>(echo)</i></li>
+    <li>Enable Mockable State Transition <i>(#winning)</i></li>
     <li>Enable Transparent Proxy</li>
     <ul>
     <li>Record Live Data</li>
@@ -105,7 +154,18 @@ by <a href="https://twitter.com/ctoestreich">@ctoestreich</a>
 
 <img src="images/allthings.jpg" alt="whoa" width="75%">
 
+!SLIDE quietest small-code 
+# Why Grails?
 
+<ul>
+   <li>CXF Plugin</li>
+   <li>CXF Client Plugin</li>
+   <li>Redis Plugin</li>
+   <li>Jesque Plugin (async jobs)</li>
+   <li>Hystrix Plugin</li>
+   <li>Restful Controllers</li>
+   <li>CRUD Dashboard Easy</li>
+</ul>
 
 !SLIDE quietest small-code 
 # Source Code

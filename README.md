@@ -1,6 +1,6 @@
 # Mocking On Steroids Presentation
 
-The full presentation can be [viewed online](http://grails-plugins-consortium.github.io/mocking-on-steriods-presentation/?full#1).
+The full presentation can be [viewed online](http://grails-plugin-consortium.github.io/mocking-on-steroids-presentation/?full#1).
 
 If you clone the repo, the presentation is in index.html.  There is no need to run a server, just clone the repo and open the index.html file.
 

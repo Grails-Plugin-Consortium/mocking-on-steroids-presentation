@@ -7,62 +7,62 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="generator" content="https://github.com/sapegin/grunt-shower-markdown">
 	<link rel="stylesheet" href="themes/ribbon/styles/screen.css">
-
-	<link rel="stylesheet" href="styles/screen.css?1438139667000">
-
+	
+		<link rel="stylesheet" href="styles/screen.css?1438139926000">
+	
 </head>
 <body class="list">
-<header class="caption">
-	<h1 id="grails-mocking-on-steroids">Grails Mocking On Steroids</h1>
-	<p>by <a href="https://twitter.com/ctoestreich">@ctoestreich</a></p>
+	<header class="caption">
+		<h1 id="grails-mocking-on-steroids">Grails Mocking On Steroids</h1>
+<p>by <a href="https://twitter.com/ctoestreich">@ctoestreich</a></p>
 
-</header>
+	</header>
 
+	
+	<section class="slide shout" ><div>
+		<h1>Grails <span class="danger">Mocking</span><br />On Steroids</h1>
+<h2>by <a href="https://twitter.com/ctoestreich">@ctoestreich</a></h2>
 
-<section class="slide shout" ><div>
-	<h1>Grails <span class="danger">Mocking</span><br />On Steroids</h1>
-	<h2>by <a href="https://twitter.com/ctoestreich">@ctoestreich</a></h2>
+	</div></section>
+	
+	<section class="slide quiet small-code" ><div>
+		<h1>Christian Oestreich</h1>
+<h2><b>OSS org:</b> Grails Plugin Consortium</h2>
+<h2><b>Github:</b> <a href="https://github.com/Grails-Plugin-Consortium">https://github.com/Grails-Plugin-Consortium</a></h2>
+<p><br />
+<img src="images/logo.gif" alt="bluestem group"></p>
+<h2><b>Company:</b> Bluestem Group</h2>
+<h2><b>Url:</b> <a href="http://www.bluestembrands.com/">http://www.bluestembrands.com/</a></h2>
 
-</div></section>
+	</div></section>
+	
+	<section class="slide quiet small-code" ><div>
+		<h1>Back In The Day</h1>
+<h2>Everything was manual</h2>
+<img src="images/devops-define-roles.jpg" alt="dev ops">
 
-<section class="slide quiet small-code" ><div>
-	<h1>Christian Oestreich</h1>
-	<h2><b>OSS org:</b> Grails Plugin Consortium</h2>
-	<h2><b>Github:</b> <a href="https://github.com/Grails-Plugin-Consortium">https://github.com/Grails-Plugin-Consortium</a></h2>
-	<p><br />
-		<img src="images/logo.gif" alt="bluestem group"></p>
-	<h2><b>Company:</b> Bluestem Group</h2>
-	<h2><b>Url:</b> <a href="http://www.bluestembrands.com/">http://www.bluestembrands.com/</a></h2>
+	</div></section>
+	
+	<section class="slide quiet small-code" ><div>
+		<h1>In The Now</h1>
+<h2>Everything is automated</h2>
+<img src="images/docker.jpg" alt="dev ops">
 
-</div></section>
+	</div></section>
+	
+	<section class="slide quiet small-code" ><div>
+		<h1>In The Now</h1>
+<img src="images/deploy.png" alt="automated deploy" height="80%">
 
-<section class="slide quiet small-code" ><div>
-	<h1>Back In The Day</h1>
-	<h2>Everything was manual</h2>
-	<img src="images/devops-define-roles.jpg" alt="dev ops">
+	</div></section>
+	
+	<section class="slide shout" ><div>
+		<h1>We run <span class="danger">a lot</span> tests</h1>
 
-</div></section>
-
-<section class="slide quiet small-code" ><div>
-	<h1>In The Now</h1>
-	<h2>Everything is automated</h2>
-	<img src="images/docker.jpg" alt="dev ops">
-
-</div></section>
-
-<section class="slide quiet small-code" ><div>
-	<h1>In The Now</h1>
-	<img src="images/deploy.png" alt="automated deploy" height="80%">
-
-</div></section>
-
-<section class="slide shout" ><div>
-	<h1>We run <span class="danger">a lot</span> tests</h1>
-
-</div></section>
-
-<section class="slide quiet small-code" ><div>
-	<h1>Running <span class="danger">a lot</span> of the same functional tests on transactional systems cause corrupted test data</h1>
+	</div></section>
+	
+	<section class="slide quiet small-code" ><div>
+		<h1>Running <span class="danger">a lot</span> of the same functional tests on transactional systems cause corrupted test data</h1>
 <pre><code>    given:</code>
 <code>    assert customer.payments.size() == 0</code>
 <code>&shy;</code>
@@ -71,16 +71,16 @@
 <code>&shy;</code>
 <code>    then:</code>
 <code>    customer.payments.size() == 1</code></pre>
-</div></section>
+	</div></section>
+	
+	<section class="slide shout" ><div>
+		<h1>Mocking Is <span class="danger">Easy</span>, Right?!</h1>
 
-<section class="slide shout" ><div>
-	<h1>Mocking Is <span class="danger">Easy</span>, Right?!</h1>
-
-</div></section>
-
-<section class="slide quiet small-code" ><div>
-	<h1>Well Of Course!</h1>
-	<h2>Spock, Mockito, etc.</h2>
+	</div></section>
+	
+	<section class="slide quiet small-code" ><div>
+		<h1>Well Of Course!</h1>
+<h2>Spock, Mockito, etc.</h2>
 <pre><code>   //Spock</code>
 <code>   ServiceClass serviceClass = Mock(ServiceClass)</code>
 <code>&shy;</code>
@@ -92,133 +92,133 @@
 <code>&shy;</code>
 <code>   //PowerMock</code>
 <code>   MyClass myClassMock = PowerMock.createMock(MyClass.class);</code></pre>
-</div></section>
+	</div></section>
+	
+	<section class="slide quietest shout" ><div>
+		<h1>Well... unless you want to mock your external systems during integration and functional tests</h1>
 
-<section class="slide quietest shout" ><div>
-	<h1>Well... unless you want to mock your external systems during integration and functional tests</h1>
+	</div></section>
+	
+	<section class="slide shout" ><div>
+		<img src="images/whoa.jpg" alt="whoa" width="75%">
 
-</div></section>
+	</div></section>
+	
+	<section class="slide quietest shout" ><div>
+		<h1>&quot;The systems behind your system don&#39;t always need to be exercised to prove your system is operating and ready for continuous deployment&quot; -me</h1>
+<h2>#microservices #boundedcontext</h2>
 
-<section class="slide shout" ><div>
-	<img src="images/whoa.jpg" alt="whoa" width="75%">
-
-</div></section>
-
-<section class="slide quietest shout" ><div>
-	<h1>&quot;The systems behind your system don&#39;t always need to be exercised to prove your system is operating and ready for continuous deployment&quot; -me</h1>
-	<h2>#microservices #boundedcontext</h2>
-
-</div></section>
-
-<section class="slide quietest small-code" ><div>
-	<h1>In our SOA we needed a way to accomplish the following</h1>
-	<ul>
-		<li>Have Reliable Success Conditions</li>
-		<li>Have Reliable Fail Conditions</li>
-		<li>Avoid Backend System Outages</li>
-		<li>Support Continuous Deployment via Functional Tests</li>
-		<li>Int &amp; Funct Tests Pass or Fail Fast</li>
-	</ul>
-
-
-
-</div></section>
-
-<section class="slide quieter shout" ><div>
-	<h1>Tools we looked at</h1>
-	<h2>Parasoft, Betamax, SoapUI, Third-party Solutions<BR /><br />These didn&#39;t meet our needs, not pci compliant,<br />were costly or all of the above.</h2>
-
-</div></section>
-
-<section class="slide quieter shout" ><div>
-	<h1>Service Virtualization<br /><span class="smaller">A <span class="danger">Smart</span> Proxy</span></h1>
-
-</div></section>
-
-<section class="slide quiet small-code" ><div>
-	<h1>Service Virtualization</h1>
-	<img src="images/stack.png" alt="stack" height="60%">
-
-</div></section>
-
-<section class="slide quiet small-code" ><div>
-	<h1>Service Virtualization</h1>
-	<img src="images/tracer.jpg" alt="tracer" height="70%">
-
-</div></section>
-
-<section class="slide quietest small-code" ><div>
-	<h1>How about we also do these things</h1>
-	<ul>
-		<li>Mock Responses <i>(matched input)</i></li>
-		<li>Enable Default Mock Responses <i>(unmatched input)</i></li>
-		<li>Map Request Fields To Mocked Response Fields <i>(echo)</i></li>
-		<li>Enable Mockable State Transition <i>(#winning)</i></li>
-		<li>Enable Transparent Proxy</li>
-		<ul>
-			<li>Record Live Data</li>
-			<li>Replay Recorded Data</li>
-			<li>Cache Responses</li>
-			<li>Cache Pre-Fetching</li>
-			<li>Monitor Service Calls (Hystrix)</li>
-		</ul>
-	</ul>
-
-
-</div></section>
-
-<section class="slide shout" ><div>
-	<img src="images/allthings.jpg" alt="whoa" width="75%">
-
-</div></section>
-
-<section class="slide quietest small-code" ><div>
-	<h1>Why Grails?</h1>
-	<ul>
-		<li>CXF Plugin</li>
-		<li>CXF Client Plugin</li>
-		<li>Redis Plugin</li>
-		<li>Jesque Plugin (async jobs)</li>
-		<li>Hystrix Plugin</li>
-		<li>Restful Controllers</li>
-		<li>CRUD Dashboard Easy</li>
-	</ul>
-
-
-</div></section>
-
-<section class="slide quietest small-code" ><div>
-	<h1>Source Code</h1>
-	<ul>
-		<li>Backend Server<br /><a href="https://github.com/Grails-Plugin-Consortium/gr8conf-services">https://github.com/Grails-Plugin-Consortium/gr8conf-services</a></li>
-		<li>Smart API (Cache, Mock, Monitor)<br /><a href="https://github.com/Grails-Plugin-Consortium/gr8conf-smart-api">https://github.com/Grails-Plugin-Consortium/gr8conf-smart-api</a></li>
-	</ul>
+	</div></section>
+	
+	<section class="slide quietest small-code" ><div>
+		<h1>In our SOA we needed a way to accomplish the following</h1>
+<ul>
+    <li>Have Reliable Success Conditions</li>
+    <li>Have Reliable Fail Conditions</li>
+    <li>Avoid Backend System Outages</li>
+    <li>Support Continuous Deployment via Functional Tests</li>
+    <li>Int &amp; Funct Tests Pass or Fail Fast</li>
+</ul>
 
 
 
-</div></section>
+	</div></section>
+	
+	<section class="slide quieter shout" ><div>
+		<h1>Tools we looked at</h1>
+<h2>Parasoft, Betamax, SoapUI, Third-party Solutions<BR /><br />These didn&#39;t meet our needs, not pci compliant,<br />were costly or all of the above.</h2>
 
-<section class="slide small-code push-content-down" ><div>
-	<h1>Demo Time</h1>
-	<p>Lets Demo This</p>
+	</div></section>
+	
+	<section class="slide quieter shout" ><div>
+		<h1>Service Virtualization<br /><span class="smaller">A <span class="danger">Smart</span> Proxy</span></h1>
 
-</div></section>
+	</div></section>
+	
+	<section class="slide quiet small-code" ><div>
+		<h1>Service Virtualization</h1>
+<img src="images/stack.png" alt="stack" height="60%">
 
-<section class="slide shout" ><div>
-	<h1>Questions?</h1>
+	</div></section>
+	
+	<section class="slide quiet small-code" ><div>
+		<h1>Service Virtualization</h1>
+<img src="images/tracer.jpg" alt="tracer" height="70%">
 
-</div></section>
+	</div></section>
+	
+	<section class="slide quietest small-code" ><div>
+		<h1>How about we also do these things</h1>
+<ul>
+    <li>Mock Responses <i>(matched input)</i></li>
+    <li>Enable Default Mock Responses <i>(unmatched input)</i></li>
+    <li>Map Request Fields To Mocked Response Fields <i>(echo)</i></li>
+    <li>Enable Mockable State Transition <i>(#winning)</i></li>
+    <li>Enable Transparent Proxy</li>
+    <ul>
+    <li>Record Live Data</li>
+    <li>Replay Recorded Data</li>
+    <li>Cache Responses</li>
+    <li>Cache Pre-Fetching</li>
+    <li>Monitor Service Calls (Hystrix)</li>
+    </ul>
+</ul>
 
 
-<div class="progress"><div></div></div>
-<script src="shower/shower.min.js"></script>
+	</div></section>
+	
+	<section class="slide shout" ><div>
+		<img src="images/allthings.jpg" alt="whoa" width="75%">
+
+	</div></section>
+	
+	<section class="slide quietest small-code" ><div>
+		<h1>Why Grails?</h1>
+<ul>
+   <li>CXF Plugin</li>
+   <li>CXF Client Plugin</li>
+   <li>Redis Plugin</li>
+   <li>Jesque Plugin (async jobs)</li>
+   <li>Hystrix Plugin</li>
+   <li>Restful Controllers</li>
+   <li>CRUD Dashboard Easy</li>
+</ul>
 
 
-<script src="node_modules/shower-core/shower.min.js?1410714146000"></script>
+	</div></section>
+	
+	<section class="slide quietest small-code" ><div>
+		<h1>Source Code</h1>
+<ul>
+<li>Backend Server<br /><a href="https://github.com/Grails-Plugin-Consortium/gr8conf-services">https://github.com/Grails-Plugin-Consortium/gr8conf-services</a></li>
+<li>Smart API (Cache, Mock, Monitor)<br /><a href="https://github.com/Grails-Plugin-Consortium/gr8conf-smart-api">https://github.com/Grails-Plugin-Consortium/gr8conf-smart-api</a></li>
+</ul>
 
 
 
+	</div></section>
+	
+	<section class="slide small-code push-content-down" ><div>
+		<h1>Demo Time</h1>
+<p>Lets Demo This</p>
 
-<!-- Shower: http://shwr.me -->
+	</div></section>
+	
+	<section class="slide shout" ><div>
+		<h1>Questions?</h1>
+
+	</div></section>
+	
+
+	<div class="progress"><div></div></div>
+	<script src="shower/shower.min.js"></script>
+
+	
+		<script src="node_modules/shower-core/shower.min.js?1410714146000"></script>
+	
+
+	
+
+	<!-- Shower: http://shwr.me -->
 </body>
 </html>
